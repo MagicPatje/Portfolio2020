@@ -1,5 +1,16 @@
-<p>showcase works!</p>
-<section *ngFor="let work of showcase">
-    <h3>{{work.project}}</h3>
-    <p>{{work.briefing}}</p>
+<section class="d-flex flex-row align-items-stretch showcase" *ngFor="let work of showcase">
+    <div class="p-2 showcase-left">
+        <p class="">{{work.year}}</p>
+    </div>
+    <div class="p-2 showcase-right">
+        <h3>{{work.project}}</h3>
+        
+        <p>{{work.briefing}}</p>
+        <p>{{work.role}}</p>
+        <p>
+            <span>Mijn belangrijkste activiteiten waren:</span>
+            <br/>
+            {{work.task}}
+        </p>
+    </div>
 </section>

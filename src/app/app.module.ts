@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { ShowcaseService } from './showcase/showcase.service';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShowcaseComponent
+    ShowcaseComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -5,13 +5,21 @@ export interface IWork {
     project: string;
     briefing: string;
     role: string;
-    task: string[];
+    task: ITask[];
     result: string;
-    tools: string[];
+    tools: ITechnique[];
     image: IImage[];
 }
 
+export interface ITask {
+    task: string;
+}
+
+export interface ITechnique {
+    tech: string;
+}
+
 export interface IImage{
-    url: string;
+    img: string;
     alt: string;
 }
