@@ -1,8 +1,42 @@
+@import '../../assets/scss/all';
+
 .showcase{
     .showcase-left{
-        min-width:150px;
+        min-width:250px;
+        background-image: url('../'+$img-url+$img-paper);
+        text-align: right;
+        padding-right: 10px;
+        padding-top: 10px;
     }
     .showcase-right{
-        width: auto;
+        width: 66%;
+        //text-align: left;
+        text-align: justify;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+
+        .tools{
+            &::after{
+                content: ', ';
+            }
+            &:last-child{
+                &::after{
+                    content: '';
+                }
+                &::before{
+                    content: ' en ';
+                }
+            }
+            &:nth-last-child(2){
+                &::after{
+                    content: '';
+                }
+            }
+        }
     }
+}
+h3{
+    font-family: $font-sansserif;
+    font-weight: 600;
 }

@@ -1,16 +1,25 @@
-<section class="d-flex flex-row align-items-stretch showcase" *ngFor="let work of showcase">
-    <div class="p-2 showcase-left">
-        <p class="">{{work.year}}</p>
+<section class="d-flex flex-row align-items-stretch showcase">
+    <div class="showcase-left">
+        <h3 class="">Project</h3>
     </div>
-    <div class="p-2 showcase-right">
-        <h3>{{work.project}}</h3>
-        
-        <p>{{work.briefing}}</p>
-        <p>{{work.role}}</p>
-        <p>
-            <span>Mijn belangrijkste activiteiten waren:</span>
-            <br/>
-            {{work.task}}
+    <div class="showcase-right">
+        <h3 class="s4">Details</h3>
+    </div>
+</section>
+<section class="d-flex flex-row align-items-stretch showcase" *ngFor="let work of showcase">
+    <div class="showcase-left">
+        <p class="">
+            {{work?.year}}<br/>
+            <span class="s1">{{work?.function}}</span><br/>
+            <span class="s2">{{work?.company}}</span>
         </p>
+    </div>
+    <div class="showcase-right">
+        <h3>{{work?.project}}</h3>
+        <p>
+            {{work?.briefing | truncate : 200 : true }}
+            <a class="small" [routerLink]="[work?.id]">Lees meer <i class="fas fa-long-arrow-alt-right"></i></a>
+        </p>
+
     </div>
 </section>

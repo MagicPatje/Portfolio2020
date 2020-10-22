@@ -1,7 +1,9 @@
 export interface IWork {
+    id: string;
     year: string;
     company: string;
-    fuction: string;
+    employer?: string;
+    function: string;
     project: string;
     briefing: string;
     role: string;

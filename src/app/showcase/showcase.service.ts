@@ -13,4 +13,8 @@ export class ShowcaseService {
   getWork(): Observable<IWork[]>{
     return this._http.get<IWork[]>('http://localhost:8888/PdeNatris/2020/Backend/getWork.php');
   }
+  getWorkItem(id): Observable<IWork>{
+    console.log("getWorkItems id: "+id);
+    return this._http.get<IWork>('http://localhost:8888/PdeNatris/2020/Backend/getWorkItem.php', {params: { id:  id }});
+  }
 }

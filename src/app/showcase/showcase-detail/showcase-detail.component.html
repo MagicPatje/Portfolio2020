@@ -1,0 +1,26 @@
+<section class="d-flex flex-row align-items-stretch showcase">
+    <div class="showcase-left">
+        <h3 class="">Project</h3>
+        <p class="">
+            {{showcase?.year}}<br/>
+            <span class="s1">{{showcase?.function}}</span><br/>
+            <span class="s2">{{showcase?.company}}</span>
+        </p>
+    </div>
+    <div class="showcase-right">
+        <h3 class="s4">Details</h3>
+        <h3>{{showcase?.project}}</h3>
+        <p>{{showcase?.briefing}}</p>
+        <p>{{showcase?.role}}</p>
+        <span class="s3">Mijn belangrijkste activiteiten waren:</span>
+        <ul>
+            <li *ngFor="let task of showcase?.task">{{task}}</li>
+        </ul>
+        <p>{{showcase?.result}}</p>
+        <p>
+            <span class="s3">Gebruikte methoden en technieken:</span>
+            <br/>
+            <span class="tools" *ngFor="let tool of showcase?.tools">{{tool}}</span>
+        </p>
+    </div>
+</section>

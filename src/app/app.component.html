@@ -1,9 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
-<pdn-showcase></pdn-showcase>
+<header class="d-flex justify-content-between"> 
+  <div class="p-2">
+    <img src="../assets/images/PdeNatrisLogo2.svg" alt="Logo" style="height: 150px;">
+  </div>
+  <nav class="p-2 align-self-end">
+    <a [routerLink]="['/home']">Home</a> | 
+    <a [routerLink]="['/showcase']">Showcase</a>
+  </nav>
+</header>
 
-<!-- <router-outlet></router-outlet> -->
+<router-outlet></router-outlet>
+
+<footer>
+  <p>&copy; 2020 - PdeNatris</p>
+</footer>

@@ -1,0 +1,4 @@
+.s1{ @include font(15px, $italic: 'true', $bold: 'true', $color: $color-primary); }
+.s2{ @include font(15px, $italic: 'true', $bold: 'true'); }
+.s3{ @include font(14px, 'true'); }
+.s4{ @include font(1.75rem, $color: $color-primary); }

@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { ShowcaseService } from './showcase/showcase.service';
 import { HomeComponent } from './home/home.component';
+import { ShowcaseDetailComponent } from './showcase/showcase-detail/showcase-detail.component';
+import { TruncatePipe } from './shared/truncate.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShowcaseComponent,
-    HomeComponent
+    HomeComponent,
+    ShowcaseDetailComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,

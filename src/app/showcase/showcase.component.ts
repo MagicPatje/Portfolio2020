@@ -18,6 +18,11 @@ export class ShowcaseComponent implements OnInit {
       console.log(this._work);
       this.showcase = Object.assign([], this._work);
       console.log(this.showcase);
+      this.showcase.sort((a:IWork, b:IWork) => {
+        if(a.id < b.id) return 1;
+        if(a.id > b.id) return -1;
+        return 0;
+      })
     });
   }
 

@@ -1,0 +1,6 @@
+@mixin font($size: 16px, $italic: 'false', $bold: 'false', $color: $color-base){
+    font-size: $size;
+    color: $color;
+    @if $bold == 'true' {font-weight: 600;}
+    @if $italic == 'true' {font-style: italic;}
+}

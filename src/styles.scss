@@ -1,6 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
+@import 'assets/scss/var';
+@import 'assets/scss/mixin';
 
 body{
-    font-family: 'Raleway', sans-serif;
+    color: $color-base;
+    font-family: $font-sansserif;
+    font-size: 16px;
+}
+.italic {
+    font-style: italic;
+}
+.bold{
+    font-weight: 600;
+}
+.container{    
+    margin-left:auto;
+    margin-right: auto;
+    width: 80%;
 }
