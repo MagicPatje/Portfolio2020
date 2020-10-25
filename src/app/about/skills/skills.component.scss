@@ -1,0 +1,35 @@
+@import '../../../assets/scss/all';
+
+.skills{
+    
+    .skills-left{
+        min-width:250px;
+        background-image: url('../../'+$img-url+$img-paper);
+        text-align: right;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    .skills-right{
+        width: 66%;
+        text-align: justify;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        .row{
+            margin-left: 0px;
+            &.skill-item:nth-child(odd){
+                div { background-color: white; }
+            }
+        }        
+    }
+}
+
+h3{
+    font-family: $font-sansserif;
+    font-weight: 600;
+}
+// @media screen and (max-width: $breakpoint-sm){
+//         .skills{
+//             background-color: yellow;
+//         }
+//     };

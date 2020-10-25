@@ -1,0 +1,26 @@
+<div class="d-flex flex-row align-items-stretch skills">
+    <div class="skills-left">
+        <h3 class="">Vaardigheden</h3>
+    </div>
+    <div class="skills-right">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-2 text-center">Ervaring</div>
+            <div class="col-3 text-center">Laatst gebruikt</div>
+        </div>
+    </div>
+</div>
+<section class="d-flex flex-row align-items-stretch skills" *ngFor="let cat of skillCategory">
+    <div class="skills-left">
+        <p class="s1">{{cat}}</p>
+    </div>
+    <div class="skills-right">
+        <ng-container *ngFor="let skill of skills">
+            <section class="row skill-item" *ngIf="skill.category === cat">
+                <div class="c col-4">{{skill.skill}}</div>
+                <div class="c col-2 text-center">{{skill.years}}j</div>
+                <div class="c col-3 text-center">{{skill.lastYearUsed}}</div>
+            </section>
+        </ng-container>
+    </div>
+</section>

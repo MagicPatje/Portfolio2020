@@ -3,12 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { HomeComponent } from './home/home.component';
 import { ShowcaseDetailComponent } from './showcase/showcase-detail/showcase-detail.component';
+import { AboutComponent } from './about/about.component';
 
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'showcase', component: ShowcaseComponent },
   { path: 'showcase/:id', component: ShowcaseDetailComponent },
+  { path: 'about', component: AboutComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];

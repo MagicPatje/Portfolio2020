@@ -6,6 +6,9 @@
 
 $color-base: #231f20;
 $color-primary: #aa1e22;
+$color-secondary:#aa8a85;
+$color-tertiary: #007bff;
+$color-quaternary: #A265B8;
 $color-highlight: white;
 
 $font-sansserif:'Raleway', Arial, Helvetica, sans-serif;
@@ -13,3 +16,9 @@ $font-serif: 'Roboto Slab', Georgia, serif;
 
 $img-url: '../assets/images/';
 $img-paper: 'OldPaperBG-RepeatXY-450.png';
+
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

@@ -18,3 +18,9 @@ body{
     margin-right: auto;
     width: 80%;
 }
+a{
+    color: $color-tertiary;
+}
+
+// /* Importing Bootstrap SCSS file. */
+// @import '~bootstrap/scss/bootstrap';
